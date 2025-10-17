@@ -1,0 +1,123 @@
+body {
+  font-family: "EB Garamond", serif;
+  background-color: #fffff9;
+  /*margin: 0;
+  padding: 0;*/
+  color: #333;
+}
+
+/* Container principal -- https://linuxhint.com/how-to-make-html-container-box-in-html/ -- buscando cosas en esta página aprendi a hacerlo*/
+.header {
+  /*max-width: 850px;*/
+  max-width: windowWidth;
+  margin: 90px auto;
+  background-color: #0000FF;
+  padding: 20px;
+  /*border-radius: 10px;*/
+}
+
+/* encabezado */
+header {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+header h1 {
+  font-family: "Meddon", cursive;
+  margin: 0;
+  font-size: 2.2em;
+  color: #ffffff;
+}
+
+header p {
+  margin: 2px 0;
+  color: #ffffff;
+}
+
+header a {
+  color: #ffffff;
+}
+
+
+/*--------------------------------------------------*/
+
+.contenido {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: windowWidth;
+  padding-left: 100px;
+  padding-right: 100px;
+  margin: 20px auto;
+  gap: 20px;
+}
+
+.contenido-vertical {
+  max-width: windowWidth;
+  align-content: center;
+  padding-left: 100px;
+  padding-right: 100px;
+  /*margin: 20px auto;*/
+  gap: 20px;
+}
+
+h1 {
+  font-family: "Meddon", cursive;
+  margin: 0;
+  /*text-align: right;*/
+  font-size: 2.2em;
+  color: #0000FF;
+}
+
+
+.contenido p {
+  flex: 1;
+  width: 100px;
+  margin: 2px 0;
+  color: #333;
+  text-align: left;
+}
+
+.contenido-vertical p{
+  max-width: 1000px;
+  margin: 30px auto;
+}
+/*------------------*/
+.obras{
+  display: flex;
+  justify-content: center;
+  max-width: windowWidth;
+  margin: 20px auto;
+  gap: 20px;
+  /*padding: 20px;*/
+  /*border-radius: 10px;
+  text-align: left;
+  margin-bottom: 10px;*/
+}
+
+}.titulo{
+  text-align: center;
+  max-width: 850px;
+  margin: 20px auto;
+  gap: 20px;
+  background-color: #fffff9;
+  /*padding: 20px;*/
+  /*border-radius: 10px;
+  text-align: left;
+  margin-bottom: 10px;*/
+}
+
+.imagen-zoom {
+  overflow: hidden;
+  display: inline-block;
+}
+
+.imagen-zoom img {
+  width: 200px;
+  transition: transform 0.3s ease;
+  display: block;
+}
+
+.imagen-zoom img:hover {
+  transform: scale(4); /* Ajusta el nivel de zoom */
+}
