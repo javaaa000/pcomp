@@ -1,15 +1,19 @@
+html{
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "EB Garamond", serif;
   background-color: #fffff9;
-  /*margin: 0;
-  padding: 0;*/
+  margin: 0;
+  padding: 0;
   color: #333;
 }
 
 /* Container principal -- https://linuxhint.com/how-to-make-html-container-box-in-html/ -- buscando cosas en esta página aprendi a hacerlo*/
 .header {
   /*max-width: 850px;*/
-  max-width: windowWidth;
+  max-width: 100%;
   background-color: #0000FF;
   padding: 20px;
 }
@@ -22,13 +26,13 @@ header {
 
 header h1 {
   font-family: "Meddon", cursive;
-  margin: 0;
-  font-size: 2.2em;
+  margin-bottom: -20px;
+  font-size: 4em;
   color: #ffffff;
 }
 
 header p {
-  margin: 2px 0;
+  margin: 0px 0;
   color: #ffffff;
 }
 
@@ -61,15 +65,26 @@ header a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: windowWidth;
+  max-width: 100%;
   padding-left: 100px;
   padding-right: 100px;
   margin: 20px auto;
   gap: 20px;
 }
 
+
+.contenido img {
+  max-width: 100%;
+  margin-bottom: 25px;
+  margin-top: 25px;
+}
+
+.contenido-invertido {
+  flex-direction: row-reverse;
+}
+
 .contenido-vertical {
-  max-width: windowWidth;
+  max-width: 100%;
   align-content: center;
   padding-left: 100px;
   padding-right: 100px;
@@ -102,7 +117,7 @@ h1 {
 .obras{
   display: flex;
   justify-content: center;
-  max-width: windowWidth;
+  max-width: 100%;
   margin: 20px auto;
   gap: 20px;
   /*padding: 20px;*/
@@ -111,7 +126,7 @@ h1 {
   margin-bottom: 10px;*/
 }
 
-}.titulo{
+.titulo{
   text-align: center;
   max-width: 850px;
   margin: 20px auto;
@@ -136,4 +151,34 @@ h1 {
 
 .imagen-zoom img:hover {
   transform: scale(4); /* Ajusta el nivel de zoom */
+}
+
+.send-back{
+  text-align: right;
+  margin-right: 50px;
+}
+
+.send-back a {
+  color: whitesmoke;
+  text-decoration: underline;
+  transition: 0.3s;
+}
+
+.send-back a:hover {
+  color: black;
+  text-decoration: underline;
+  transform: translateY(-2px);
+}
+
+b{
+  font-size: 1.3em;
+  font-weight: 700;
+  color: #0000FF;
+}
+
+.footer {
+  margin-top: 50px;
+  max-width: 100%;
+  background-color: #0000FF;
+  padding: 20px;
 }
